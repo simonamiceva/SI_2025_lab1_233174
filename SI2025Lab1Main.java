@@ -74,7 +74,7 @@ public void removeTaskByName(String taskName) {
     // 2. Find all completed tasks
     public List<Task> getCompletedTasks() {
         // TODO: Implement logic to return completed tasks
-        return tasks.stream().filter(Task::isCompleted).collect(Collectors.toList());
+    return tasks.stream().filter(Task::isCompleted).collect(Collectors.toList());
     }
 
     // 3. List tasks sorted by name

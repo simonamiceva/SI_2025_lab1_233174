@@ -1,3 +1,42 @@
-Инсталирање на Git и креирање на GitHub профил.
-Креирање на оддалечен репозиториум.
-Работа со гранки и комити.
+13.   git fetch origin // Ја ажурира локалната копија со последните промени од remote репозиториумот, без да ги менува локалните гранки.
+
+14. git checkout 1-remove-a-task-by-name  // Се префрламе на гранката 1-remove-a-task-by-name
+
+15. notepad SI2025Lab1Main.java  //Го отвораме SI2025Lab1Main.java во Notepad за да ја имплементираме потребната функционалност.
+
+     git add SI2025Lab1Main.java //Ја додава изменетата датотека во staging area
+
+16. git commit -m "Implement removeTaskByName function" //Создаваме commit со пораката "Implement removeTaskByName function", означувајќи дека сме ја имплементирале функцијата 
+
+17. git push origin 1-remove-a-task-by-name //Ги праќаме локалните измени од гранката 1-remove-a-task-by-name во remote
+
+// Истото се поворува и за останатите 2 issues.
+
+22. git checkout master //Се префрламе на master гранката.
+
+    git pull origin master //Ги превземаме најновите измени од master на remote репозиториумот.
+
+   git merge 2-find-all-completed-tasks //Ја спојуваме гранката 2-find-all-completed-tasks со master.
+
+   git push origin master //Ги испраќаме промените од локалната master гранка кон remote
+
+25. git log --oneline --graph --all > logs.txt //Ја зачувуваме историјата на комитите во датотека logs.txt
+
+git add logs.txt 233174.txt //Ги додаваме датотеките logs.txt и 233174.txt во staging area.
+
+git commit -m "Final commit" //Создаваме финален комит
+
+26. git push origin master //Ги праќаме финалните промени од master кон GitHub.
+
+ДЕЛ 3
+28. git clone https://github.com/simonamiceva/SI_2025_lab1_151020.git //Ја копираме форк-верзијата на репозиториумот локално.
+
+29. cd C:\Users\Lenovo\SI_2025_lab1_151020 //Влегуваме во директориумот каде што се наоѓа клонираниот репозиториум.
+
+  New-Item 233174.txt -ItemType File //Создаваме нова датотека со име 233174.txt.
+
+  notepad 233174.txt //Ја отвораме датотеката во Notepad за да внесеме нашето име.
+
+  git add 233174.txt //Ја додаваме датотеката во staging area.
+
+  git commit -m "Add file" //Создаваме commit со пораката "Add file".     
